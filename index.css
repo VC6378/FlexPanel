@@ -1,0 +1,79 @@
+html{
+    box-sizing: border-box;
+    background-color: rgb(250, 250, 159);
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 500;
+}
+
+body{
+    margin: 0;
+}
+
+.panels{
+    display: flex;
+    overflow: hidden;
+    min-height: 100vh;
+    
+}
+
+
+.panel p{
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* text-shadow: 0 0 0 50px rgba(0, 0, 0, 0); */
+    cursor: pointer;
+    /* font-size: 2em; */
+   
+    /* transition: ease-in-out .5s; */
+    transition: all .5s;
+}
+
+.panel{
+    background: purple;
+    color: white;
+    box-shadow: inset 0 0 0 5px rgba(0, 0, 0, 0);
+    text-align: center;
+    align-items: center;
+    flex: 1;
+    font-size: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* transition: ease-in-out .05s; */
+    transition: all .5s;
+}
+
+
+
+.panel >*:first-child{transform: translateY(-500%);}
+.panel.open-active >*:first-child{transform: translateY(0%);}
+.panel >*:last-child{transform: translateY(500%);}
+.panel.open-active >*:last-child{transform: translateY(0);}
+
+
+.panel.open{
+    flex: 5;
+    font-size: 70px;
+}
+
+.panel1{
+    background: url('https://images.unsplash.com/photo-1505118380757-91f5f5632de0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c2VhfGVufDB8fDB8fA%3D%3D&w=1000&q=80');
+    background-size: cover;
+
+}
+
+.panel2{
+    background: url('https://images.theconversation.com/files/440264/original/file-20220111-23-19p1ssc.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1200&h=900.0&fit=crop');
+    background-size: cover;
+}
+
+.panel3{
+    background: url('https://images.pexels.com/photos/355321/pexels-photo-355321.jpeg?cs=srgb&dl=pexels-pixabay-355321.jpg&fm=jpg');
+    background-size: cover;
+}
+
+.panel4{
+    background: url('https://images.unsplash.com/photo-1568528139106-c295280e4757?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bmlnaHQlMjBtb3VudGFpbnxlbnwwfHwwfHw%3D&w=1000&q=80');
+    background-size: cover;
+}
+
