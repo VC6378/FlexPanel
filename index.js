@@ -2,8 +2,9 @@ const pan = document.querySelectorAll('.panel');
 
 
 function toggleClick(e){
-    console.log("hello");
+    // console.log("hello");
     this.classList.toggle('open');
+    console.log(this.classList);
 }
 
 function toggleChange(e){
